@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="solsag">
+    <!--================================ SOL KISIM ======================================= -->
+    <div class="sol">
+        <img src="Logo.png" alt="Future Mail" class="Logo">
+        <H1 class="Baslik">Geleceğine Bir Mesaj Bırak</H1>
+        <textarea type="text" id="mektup" class="mektup" placeholder="Sevgili Geleceğim..."></textarea>
+    </div>
+
+    <!--================================ SAĞ KISIM ======================================= -->
+    <div class="sag">
+        <div class="linkler">  <!-- LINKLER -->
+            <a href="#" class="link nedir">Future Mail nedir?</a>
+            <a href="#" class="link hakkimiz">Hakkımızda</a>
+        </div>
+
+        <div class="tarih"> <!-- TARIH -->
+            <h6 class="h6">Tarih Seç:</h6>
+
+            <button onclick="selectButton(1)" class="buton">6 Ay</button>
+            <button onclick="selectButton(2)" class="buton">1 Yıl</button>
+            <button onclick="selectButton(3)" class="buton">3 Yıl</button>
+            <button onclick="selectButton(4)" class="buton">5 Yıl</button>
+        </div>
+
+        <div class="mailGir"> <!-- MAİL -->
+            <h6 class="h6">Göndermek İstediğin Maili Gir:</h6>
+
+            <input type="text" id="mail" class="mail" placeholder="Örnek@mail.com">
+        </div>
+
+        <div class="bagis"> <!-- BAĞIŞ -->
+            <h6 class="h6">Bizi Desteklemek İster misin :</h6>
+            <div class="ucretsiz">
+                <input type="checkbox" id="checkbox1" name="checkbox" class="checkbox" onclick="checkOnlyOne(1)">
+                <p>Sadece Mektup Gönder</p>
+                <p id="s"> Ücretsiz</p>
+            </div>
+
+            <div class="ucretli">
+                <input type="checkbox" id="checkbox2" name="checkbox" class="checkbox" onclick="checkOnlyOne(2)">
+                <p>Mektup Gönder ve Destekle</p>
+                <p id="s-2"> 19TL</p>
+            </div>   
+        </div>
+
+        <div class="gonder">
+            <button onclick="getText()" class="gonderButon">Geleceğe Gönder</button>
+        </div>
+        
+    </div>
+</div>
+    <script src="javaScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root
+{
+    --koyuPembe:#FF7AA2;
+    --hover:#f8a8c0;
+    --textBox:#FECFDD;
+    --acikPembe:#FFE0E9;
+}
+
+body
+{
+    background-color: var(--acikPembe);
+}
+
+.solsag
+{
+    display:flex;
+}
+
+.sol, .sag
+{
+    padding: 20px;
+}
+
+h1, p, a, h6
+{
+    font-family: "Lora", serif;
+}
+
+/*===========================SOL KISIM=============================*/
+.Logo
+{
+    width: 380px;
+    height: auto;
+}
+
+.Baslik
+{
+    color: var(--koyuPembe);
+    font-size: 38px;
+    margin-top: 60px;
+}
+
+.mektup
+{
+    color: var(--koyuPembe);
+    background-color: var(--textBox);
+    width: 1200px;
+    height: 600px;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    vertical-align: top;
+    padding: 20px 20px;
+    font-size: 22px;
+    outline: none;
+    resize:vertical;
+}
+
+.mektup::placeholder
+{
+    color: var(--koyuPembe);
+}
+
+/*===========================SAĞ KISIM=============================*/
+
+/*LİNKLER KISMI*/
+
+.link 
+{
+    color: var(--koyuPembe);
+    font-size: 28px;
+    text-decoration: none;
+    padding: 0; 
+    margin-left: 0;
+    margin-top: 20px;
+    transition: 300ms;
+}
+
+.hakkimiz
+{
+    margin-left: 60px;
+}
+.link:hover
+{
+    color: var(--hover);
+    transition: 300ms;
+}
+
+/*TARİH KISMI*/
+
+.h6
+{
+    font-size: 24px;
+    color: var(--koyuPembe);
+    margin-bottom: 20px;
+}
+
+.buton
+{
+    width: 80px;
+    height: 30px;
+    background-color: var(--koyuPembe);
+    color: var(--acikPembe);
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    margin-right: 25px;
+    font-family: "Lora", serif;
+    font-size: 16px;
+}
+
+.tarih
+{
+    margin-top: 220px;
+}
+
+/*MAİL KISMI*/
+
+.mail
+{
+    color: var(--koyuPembe);
+    background-color: var(--textBox);
+    border: none;
+    border-radius: 20px;
+    width: 390px;
+    height: 40px;
+    color: var(--koyuPembe);
+    padding: 10px;
+    outline: none;
+    font-family: "Lora", serif;
+    font-size: 18px;
+}
+.mail::placeholder
+{
+    color:#ff7aa27b;
+}
+
+/*BAĞIŞ KISMI*/
+
+.ucretsiz
+{
+    display: flex;
+    padding-left: 10px;
+}
+
+.ucretsiz p
+{
+    color: var(--koyuPembe);
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+#s
+{
+    margin-left: 60px;
+    color: #ff7aa2bd;
+}
+
+#s-2
+{
+    margin-left: 60px;
+    color: #ffc9da;
+}
+
+.ucretli
+{
+    display: flex;
+    background-color: var(--koyuPembe);
+    border-radius: 30px;
+    height: 60px;
+    padding-left: 10px;
+}
+
+.ucretli p
+{
+    color:var(--acikPembe);
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+.checkbox
+{
+    cursor: pointer;
+    background-color: var(--acikPembe);
+}
+
+/*BAĞIŞ KISMI*/
+
+.gonderButon
+{
+    background-color: var(--koyuPembe);
+    color: var(--acikPembe);
+    cursor: pointer;
+    width: 420px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border-style: none;
+    outline: none;
+    font-size: 40px;
+    font-family: "Lora", serif;
+    transition: 300ms;
+}
+
+.gonderButon:hover
+{
+    background-color:#fdd8e4;
+    color:var(--koyuPembe);
+    transition: 300ms;
+}
